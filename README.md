@@ -89,7 +89,7 @@ Ou usando yarn:
 ```
 
 ```Bash
-yarn install
+npm install
 ```
 Executando o Servidor de Desenvolvimento
 Para iniciar o servidor de desenvolvimento localmente:
@@ -98,11 +98,11 @@ Usando npm:
 
 ```Bash
 npm run dev
-Ou usando yarn:
+Ou usando npm:
 ```
 
 ```Bash
-yarn dev
+npm dev
 ```
 
 Abra seu navegador e acesse http://localhost:3000 para ver o projeto em execução.
@@ -119,7 +119,7 @@ npm run build
 Ou usando yarn:
 
 ```Bash
-yarn build
+npm build
 ```
 
 Este comando irá gerar uma pasta .next com os arquivos otimizados para produção.
@@ -136,7 +136,7 @@ npm run start
 Ou usando yarn:
 
 ```Bash
-yarn start
+npm start
 ```
 
 Tecnologias Utilizadas
