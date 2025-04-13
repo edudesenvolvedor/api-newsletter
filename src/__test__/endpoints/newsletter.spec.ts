@@ -1,5 +1,5 @@
 describe('newsletter', () => {
-    test('a', async () => {
-        expect(2).toBe(2);
-    })
-})
+  test('a', async () => {
+    expect(2).toBe(2);
+  });
+});

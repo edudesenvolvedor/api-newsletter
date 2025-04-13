@@ -19,30 +19,31 @@ Este é um microsserviço desenvolvido com **Next.js** utilizando as **API Route
 
 ### Gerenciamento de Assinantes
 
-| Método   | Endpoint                                     | Descrição                                                              |
-|----------|----------------------------------------------|------------------------------------------------------------------------|
-| `POST`   | `/api/subscribers`                           | Cadastrar um novo assinante                                           |
-| `GET`    | `/api/subscribers`                           | Listar todos os assinantes (com paginação e filtros opcionais)        |
-| `GET`    | `/api/subscribers/:id`                       | Obter os dados de um assinante específico                             |
-| `PUT`    | `/api/subscribers/:id`                       | Atualizar os dados de um assinante                                    |
-| `DELETE` | `/api/subscribers/:id`                       | Remover um assinante                                                  |
-| `POST`   | `/api/subscribers/batch`                     | Importar vários assinantes em lote                                    |
-| `POST`   | `/api/subscribers/:id/segments`              | Adicionar assinante a segmentos                                       |
-| `DELETE` | `/api/subscribers/:id/segments/:segmentId`   | Remover assinante de um segmento específico                           |
+| Método   | Endpoint                                   | Descrição                                                      |
+| -------- | ------------------------------------------ | -------------------------------------------------------------- |
+| `POST`   | `/api/subscribers`                         | Cadastrar um novo assinante                                    |
+| `GET`    | `/api/subscribers`                         | Listar todos os assinantes (com paginação e filtros opcionais) |
+| `GET`    | `/api/subscribers/:id`                     | Obter os dados de um assinante específico                      |
+| `PUT`    | `/api/subscribers/:id`                     | Atualizar os dados de um assinante                             |
+| `DELETE` | `/api/subscribers/:id`                     | Remover um assinante                                           |
+| `POST`   | `/api/subscribers/batch`                   | Importar vários assinantes em lote                             |
+| `POST`   | `/api/subscribers/:id/segments`            | Adicionar assinante a segmentos                                |
+| `DELETE` | `/api/subscribers/:id/segments/:segmentId` | Remover assinante de um segmento específico                    |
 
 ### Segmentos
 
-| Método   | Endpoint                                     | Descrição                                                              |
-|----------|----------------------------------------------|------------------------------------------------------------------------|
-| `GET`    | `/api/segments`                              | Listar todos os segmentos                                              |
-| `POST`   | `/api/segments`                              | Criar um novo segmento                                                 |
-| `PUT`    | `/api/segments/:id`                          | Atualizar um segmento                                                  |
-| `DELETE` | `/api/segments/:id`                          | Deletar um segmento                                                    |
-| `GET`    | `/api/segments/:id/subscribers`              | Listar assinantes de um segmento específico                            |
+| Método   | Endpoint                        | Descrição                                   |
+| -------- | ------------------------------- | ------------------------------------------- |
+| `GET`    | `/api/segments`                 | Listar todos os segmentos                   |
+| `POST`   | `/api/segments`                 | Criar um novo segmento                      |
+| `PUT`    | `/api/segments/:id`             | Atualizar um segmento                       |
+| `DELETE` | `/api/segments/:id`             | Deletar um segmento                         |
+| `GET`    | `/api/segments/:id/subscribers` | Listar assinantes de um segmento específico |
 
 ---
 
 ## 🧪 Tecnologias Utilizadas
+
 - **NodeJS v20.18.3**
 - **Next.js (API Routes)**
 - **TypeScript**
@@ -79,6 +80,7 @@ Clone o repositório:
 git clone [https://github.com/dolthub/dolt](https://github.com/dolthub/dolt)
 cd [nome do seu repositório]
 ```
+
 Instale as dependências:
 
 Usando npm:
@@ -91,6 +93,7 @@ Ou usando yarn:
 ```Bash
 npm install
 ```
+
 Executando o Servidor de Desenvolvimento
 Para iniciar o servidor de desenvolvimento localmente:
 
@@ -158,11 +161,11 @@ Exemplo:
 ```
 nome-do-projeto-api/
 ├── pages/                  # Diretório principal do Next.js
-│   └── api/                # Rotas da API  
+│   └── api/                # Rotas da API
 │   │   └── v1/             # Versionamento
 │   │       ├── user/       # Endpoint
 │   │       │    └── route.ts    # Exemplo de rota dinâmica (ex: /api/products/[id].js)
-            └── ...           # Outras rotas da API      
+            └── ...           # Outras rotas da API
 │   └── auth/         # Rotas relacionadas à autenticação
 │       └── page.ts  # Rota para login de usuários
 │           └── signup.js # Rota para cadastro de usuários
