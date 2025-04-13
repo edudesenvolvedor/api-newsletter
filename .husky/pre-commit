@@ -1,0 +1,12 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🚀 Executando pre-commit hooks..."
+
+npx prettier --write . || { echo "❌ Prettier falhou"; exit 1; }
+
+npx eslint . --ext .js,.jsx,.ts,.tsx --fix || { echo "❌ ESLint falhou"; exit 1; }
+
+npm run build || { echo "❌ Build do Next.js falhou"; exit 1; }
+
+echo "✅ Pre-commit checks passaram!"

@@ -1,0 +1,25 @@
+node_modules
+.next
+out
+dist
+coverage
+public
+
+# Arquivos de configuração
+*.config.js
+*.config.cjs
+*.config.mjs
+
+# Dependências lock
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Ambientes e logs
+.env*
+.npm*
+debug.log*
+
+# Ignorar arquivos do editor
+.vscode
+.idea

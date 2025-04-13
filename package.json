@@ -7,19 +7,35 @@
     "build": "next build",
     "start": "next start",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "lint": "eslint . --ext .ts,.tsx --fix",
+    "format": "prettier --write .",
+    "prepare": "husky"
   },
   "dependencies": {
+    "@eslint/eslintrc": "^3.3.1",
     "next": "15.3.0"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/node": "^20",
     "@types/react": "^19",
+    "@typescript-eslint/eslint-plugin": "^8.29.1",
+    "@typescript-eslint/parser": "^8.29.1",
+    "eslint": "^9.24.0",
+    "eslint-config-next": "^15.3.0",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
     "jest": "^29.7.0",
     "jest-environment-node": "^29.7.0",
+    "prettier": "^3.5.3",
     "ts-jest": "^29.3.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5"
+    "typescript": "^5",
+    "typescript-eslint": "^8.29.1",
+    "@eslint/eslintrc": "^3",
+    "@next/eslint-plugin-next": "^15.2.4",
+    "git-commit-msg-linter": "^5.0.8",
+    "husky": "^9.1.7"
   }
 }
