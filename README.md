@@ -76,34 +76,35 @@ Instalação
 Clone o repositório:
 
 ```Bash
-
 git clone [https://github.com/dolthub/dolt](https://github.com/dolthub/dolt)
 cd [nome do seu repositório]
+```
 Instale as dependências:
 
 Usando npm:
 
-Bash
-
+```Bash
 npm install
 Ou usando yarn:
+```
 
-Bash
-
+```Bash
 yarn install
+```
 Executando o Servidor de Desenvolvimento
 Para iniciar o servidor de desenvolvimento localmente:
 
 Usando npm:
 
-Bash
-
+```Bash
 npm run dev
 Ou usando yarn:
+```
 
-Bash
-
+```Bash
 yarn dev
+```
+
 Abra seu navegador e acesse http://localhost:3000 para ver o projeto em execução.
 
 Construindo para Produção
@@ -111,14 +112,16 @@ Para construir o projeto para produção:
 
 Usando npm:
 
-Bash
-
+```Bash
 npm run build
+```
+
 Ou usando yarn:
 
-Bash
-
+```Bash
 yarn build
+```
+
 Este comando irá gerar uma pasta .next com os arquivos otimizados para produção.
 
 Executando em Produção
@@ -126,14 +129,16 @@ Para iniciar o servidor em modo de produção (após a construção):
 
 Usando npm:
 
-Bash
-
+```Bash
 npm run start
+```
+
 Ou usando yarn:
 
-Bash
-
+```Bash
 yarn start
+```
+
 Tecnologias Utilizadas
 Liste as principais tecnologias e bibliotecas utilizadas no seu projeto.
 
@@ -149,7 +154,7 @@ Estrutura do Projeto
 Explique brevemente a estrutura de pastas do seu projeto Next.js, destacando as mais importantes.
 
 Exemplo:
-```
+
 ```
 nome-do-projeto-api/
 ├── pages/                  # Diretório principal do Next.js
@@ -189,7 +194,7 @@ nome-do-projeto-api/
 ├── README.md            # Arquivo de documentação principal do projeto
 └── tsconfig.json        # Arquivo de configuração do TypeScript (se o projeto usar TypeScript)
 ```
-```
+
 Deploy
 Instruções sobre como fazer o deploy do seu projeto. Mencione as plataformas recomendadas ou as etapas gerais.
 
@@ -201,44 +206,7 @@ Vercel (recomendado para Next.js)
 Netlify
 AWS Amplify
 Render
+
 Siga a documentação da plataforma escolhida para configurar o deploy.
 
-Contribuição
-Se você deseja que outras pessoas contribuam para o seu projeto, inclua diretrizes sobre como fazê-lo.
-
-Exemplo:
-
-Contribuições são sempre bem-vindas! Por favor, siga estas etapas:
-
-Faça um fork do repositório.
-Crie uma branch com sua feature (git checkout -b feature/sua-feature).
-Faça o commit de suas mudanças (git commit -am 'Add some feature').
-Faça o push para a branch (git push origin feature/sua-feature).
-Abra um Pull Request.
-Licença
-Especifique a licença sob a qual seu projeto está distribuído.
-
-Exemplo:
-
-Este projeto está licenciado sob a Licença MIT.
-
-Autor
-Seu nome ou o nome da sua organização.
-
-Exemplo:
-
-[Seu Nome]([Seu Link])
-
-Agradecimentos
-Se você quiser agradecer a alguém ou a algum recurso que ajudou no desenvolvimento do projeto, pode adicionar uma seção aqui.
-
-Exemplo:
-
-Agradecimentos à comunidade Next.js por sua excelente documentação e suporte.
-Inspirado em [link de algum projeto ou recurso].
-Nota: Adapte este modelo com as informações específicas do seu projeto. Adicione ou remova seções conforme necessário. Um bom README é essencial para que outras pessoas (e você mesmo no futuro) entendam e possam trabalhar com o seu projeto.
-
 ---
-
-# Microservice
-
